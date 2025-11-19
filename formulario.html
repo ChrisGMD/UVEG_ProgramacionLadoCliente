@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de una persona usuaria</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1 class="titulo">Registro de una persona usuaria</h1>
+    <div class="seccion">
+        
+        <form class="formulario" action="#" method="post">
+            <ul>
+                <li>
+                    <label class="titulo_campos" for="nombre">Nombre:</label>
+                    <input class="campos" type="text" id="nombre" name="nombre_usuario" required>
+                </li>
+                <li>
+                    <label class="titulo_campos" for="apellido">Apellido:</label>
+                    <input class="campos" type="text" id="apellido" name="apellido_usuario" required>
+                </li>
+                <li>
+                    <label class="titulo_campos" for="correo">Correo electrónico:</label>
+                    <input class="campos" type="email" id="correo" name="correo_usuario" required>
+                </li>
+                <li>
+                    <label class="titulo_campos" for="password">Contraseña:</label>
+                    <input class="campos" type="password" id="password" name="password_usuario" required>
+                </li>
+                <li>
+                    <label class="titulo_campos" for="acerca">Acerca de mi:</label>
+                    <textarea class="campos" name="acerca" id="acerca_usuario"></textarea>
+                </li>
+                <li>
+                    <p class="titulo_campos" >Géneros de juegos de mi interés:</p>
+                    <label><input type="checkbox" name="generos" value="deportes"> Deportes</label><br>
+                    <label><input type="checkbox" name="generos" value="shooters"> Shooters</label><br>
+                    <label><input type="checkbox" name="generos" value="rpg"> RPG</label><br>
+                    <label><input type="checkbox" name="generos" value="survival horror"> Survival Horror</label><br>
+                    <label><input type="checkbox" name="generos" value="rogue like"> Rogue Like</label><br>
+                    <label><input type="checkbox" name="generos" value="simulacion"> Simulación</label>
+                </li>
+                <li>
+                    <button type="submit">Registrarme</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

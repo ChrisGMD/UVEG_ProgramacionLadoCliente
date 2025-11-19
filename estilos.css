@@ -7,14 +7,14 @@ body {
     font-size: 2rem;
     color: rgb(0, 0, 0);
     background: ghostwhite;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 8px;
     text-align: center;
     height: 2rem;
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-    min-width: 430px;
+    min-width: 420px;
 }
 
 .subtitulo {
@@ -40,7 +40,6 @@ span {
 
 #imagen {
     text-align: center;
-    width: auto;
 }
 
 #imagen img {
@@ -69,4 +68,50 @@ span {
     border: solid 1px black;
     border-radius: 3px;
     padding: 1rem;
+}
+
+.formulario {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario ul{
+    list-style: none;
+    padding: 0;
+}
+
+.formulario li {
+    margin-bottom: 16px;
+}
+
+.titulo_campos {
+    font-weight:800;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2e4591;
+}
+
+
+.campos {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.formulario textarea {
+    height: 100px;
+}
+
+
+.formulario button {
+    background-color: #42528a;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: ghostwhite;
 }
