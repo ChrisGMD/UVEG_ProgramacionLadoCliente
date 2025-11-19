@@ -14,6 +14,7 @@ body {
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
+    min-width: 430px;
 }
 
 .subtitulo {
@@ -22,7 +23,7 @@ body {
 
 .seccion {
     background-color: ghostwhite;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 8px;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -39,10 +40,11 @@ span {
 
 #imagen {
     text-align: center;
+    width: auto;
 }
 
 #imagen img {
-    width: 430px;
+    width: 400px;
     height: auto;
 }
 
