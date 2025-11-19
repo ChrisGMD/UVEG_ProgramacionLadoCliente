@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Calculadora HTML, CSS y JS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1 class="titulo_calculadora">Calculadora Básica</h1>
+        <input type="text" id="pantalla_calculadora" disabled>
+        <div class="botones">
+            <button onclick="agregar('1')">1</button>
+            <button onclick="agregar('2')">2</button>
+            <button onclick="agregar('3')">3</button>
+            <button onclick="agregar('/')">/</button>
+            </br>
+            <button onclick="agregar('4')">4</button>
+            <button onclick="agregar('5')">5</button>
+            <button onclick="agregar('6')">6</button>
+            <button onclick="agregar('*')">*</button>
+            </br>
+            <button onclick="agregar('7')">7</button>
+            <button onclick="agregar('8')">8</button>
+            <button onclick="agregar('9')">9</button>
+            <button onclick="agregar('-')">-</button>
+            </br>
+            <button id="boton_limpiar" onclick="limpiar_pantalla()">C</button>
+            <button onclick="agregar('0')">0</button>
+            <button onclick="agregar('.')">.</button>
+            <button onclick="agregar('+')">+</button>
+            </br>
+            <button onclick="calcular_resultado()" id="resultado">Resultado</button>
+        </div>
+    </div>
+    
+    
+    <script>
+    let pantalla = document.getElementById('pantalla_calculadora');
+
+    function agregar(valor) {
+      pantalla.value += valor;
+    }
+
+    function calcular_resultado() {
+      try {
+        pantalla.value = eval(pantalla.value);
+      } catch {
+        pantalla.value = "Error";
+      }
+    }
+
+    function limpiar_pantalla() {
+      pantalla.value = '';
+    }
+  </script>
+</body>
+</html>

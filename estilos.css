@@ -1,3 +1,9 @@
+/* Estilos del Reto 2. Sitio Web */
+
+* {
+
+}
+
 body {
     background-color: rgb(148, 145, 145);
 }
@@ -70,6 +76,8 @@ span {
     padding: 1rem;
 }
 
+/* Estilos del Reto 3. Formulario */
+
 .formulario {
     max-width: 350px;
     margin: 0 auto;
@@ -92,7 +100,6 @@ span {
     color: #2e4591;
 }
 
-
 .campos {
     width: 300px;
     padding: 8px;
@@ -114,4 +121,66 @@ span {
     font-size: 16px;
     cursor: pointer;
     color: ghostwhite;
+}
+
+
+/* Estilos del Reto 4. Calculadora */
+
+.calculadora {
+    text-align: center;
+    background-color: rgb(49, 95, 119);
+    padding: 2rem;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    border-radius: 8px;
+}
+
+.titulo_calculadora {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(194, 240, 240);
+}
+
+#pantalla_calculadora {
+    width: 218px;
+    height: 50px;
+    margin: .2rem;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 .5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    color: rgb(241, 243, 255);
+}
+
+.botones {
+    text-align: center;
+    gap: 2px;
+    min-width: 240px;
+}
+
+.botones button {
+    width: 50px;
+    height: 50px;
+    margin: .2rem;
+    cursor: pointer;
+}
+
+#boton_limpiar {
+    background-color: rgba(255, 0, 0, 0.726);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(226, 220, 220);
+}
+
+#resultado {
+    width: 230px;
+    background-color: rgb(43, 150, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
 }
