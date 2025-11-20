@@ -1,11 +1,7 @@
 /* Estilos del Reto 2. Sitio Web */
 
-* {
-
-}
-
 body {
-    background-color: rgb(148, 145, 145);
+    background-color: rgb(203, 205, 206);
 }
 
 .titulo {
@@ -21,6 +17,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     min-width: 420px;
+    border: solid 1px rgb(167, 167, 180);
 }
 
 .subtitulo {
@@ -37,6 +34,7 @@ body {
     margin-right: 5%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-width: 400px;
+    border: solid 1px rgb(167, 167, 180);
 }
 
 span {
@@ -159,7 +157,6 @@ span {
 
 .botones {
     text-align: center;
-    gap: 2px;
     min-width: 240px;
 }
 
@@ -182,5 +179,38 @@ span {
     background-color: rgb(43, 150, 0);
     color: rgb(255, 255, 255);
     font-size: 16px;
+    font-weight: bold;
+}
+
+
+#contenedor {
+    margin-top: 20px;
+}
+
+.boton_refresh {
+    text-align: center;
+}
+
+#btnRefrescar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 30px;
+}
+
+.noticia {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background: #d4dceb;
+}
+
+.noticia img {
+    max-width: 200px;
+}
+
+#error {
+    color: red;
     font-weight: bold;
 }
